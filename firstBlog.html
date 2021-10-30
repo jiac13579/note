@@ -86,7 +86,15 @@
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <h2 class="sub-header">firstBlog</h2>
           <div class="table-responsive">
-            <p id="demo">this is first Blog new</p>
+            <p id="demo">this is first Blog </p>
+
+            <p>CAP理论：即一个分布式系统不可能同时满足C、A、P三个需求。</p>
+            <p>C：Consistency,强一致性     分布式环境中多个数据副本保持一致</p>
+            <p>A： Availability高可用性      系统提供的服务一致处于可用，对于用户的每一操作请求总是能在有限的时间内返回结果</p>
+            <p>P：partition Tolerance分区容错性     分布式遇到任何网络分区故障时，仍然需要能保证对外提供满足一致性和可用性的服务</p>
+            <p>CAP只能3选2，在分布式系统中，容错性P肯定是要有的，所以在产生网络问题时，要么错误返回，要么阻塞等待，前者牺牲了一致性，后者牺牲了可用性。
+            </p>
+            
           </div>
          
         </div>
